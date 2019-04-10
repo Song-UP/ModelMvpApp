@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="RegisterEditTextView" tools:ignore="ResourceName">
+        <attr name="left_img_src" format="reference"/>
+        <attr name="et_hint_text" format="string"/>
+        <attr name="required_isShowing" format="boolean"/>
+        <attr name="left_img_width" format="dimension"/>
+        <attr name="left_img_height" format="dimension"/>
+        <attr name="tv_error_text" format="string"/>
+        <attr name="tv_error_isVisibility" format="boolean"/>
+        <attr name="input_hint" format="string"/>
+        <attr name="digits" format="string"/>
+        <attr name="maxLenght" format="reference|integer"/>
+        <attr name="input_type">
+            <enum name="phone" value="3"/>
+            <enum name="number" value="2"/>
+            <enum name="onlyChinese" value="4"/>
+            <enum name="textPassword" value="128"/>
+        </attr>
+    </declare-styleable>
+</resources>

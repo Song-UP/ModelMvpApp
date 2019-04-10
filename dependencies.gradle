@@ -1,14 +1,14 @@
-def supportVersion = "25.3.1"
+def supportVersion = "28.0.0"
 def rxBindingVersion = "0.4.0"
 def retrofitVersion = "2.2.0"
 def okHttpVersion = "3.7.0"
 def stethoVersion = "1.5.0"
-def butterKnifeVersion = "8.6.0"
+def butterKnifeVersion = "8.8.1"
 def daggerVersion = "2.8"
 def routerVersion = "0.2.3"
 def arouterApiVersion="1.2.1.1"
 def arouterCompilerVersion="1.1.2.1"
-def butterKnifeGradlePluginVersion="8.6.0"
+//def butterKnifeGradlePluginVersion="8.6.0"
 def toolsBuildGradle="2.3.1"
 project.ext {
     android = [
@@ -21,10 +21,10 @@ project.ext {
             versionName      : "1.0"
     ]
 
-    classpath = [
-            "butterknife-gradle-plugin": "com.jakewharton:butterknife-gradle-plugin:${butterKnifeGradlePluginVersion}",
-            "tools-build-gradle":"com.android.tools.build:gradle:${toolsBuildGradle}"
-    ]
+//    classpath = [
+//            "butterknife-gradle-plugin": "com.jakewharton:butterknife-gradle-plugin:${butterKnifeGradlePluginVersion}",
+//            "tools-build-gradle":"com.android.tools.build:gradle:${toolsBuildGradle}"
+//    ]
 
     dependencies = [
             //android-support
@@ -33,8 +33,12 @@ project.ext {
             "design"                      : "com.android.support:design:${supportVersion}",
             "recyclerview-v7"                : "com.android.support:recyclerview-v7:${supportVersion}",
             "cardview-v7"                    : "com.android.support:cardview-v7:${supportVersion}",
-            "constraint-layout"           : "com.android.support.constraint:constraint-layout:1.0.0-alpha7",
+            "constraint-layout"           : "com.android.support.constraint:constraint-layout:1.1.3",
 
+            //test
+            "junit"                       : "junit:junit:4.12",
+            "test_runner"                :"com.android.support.test:runner:1.0.2",
+            "test_espresso"              :"com.android.support.test.espresso:espresso-core:3.0.2",
             //java8-support
             "stream"                      : "com.annimon:stream:1.0.8",
 
@@ -60,7 +64,7 @@ project.ext {
 
             //butterKnife
             "butterknife"                 : "com.jakewharton:butterknife:${butterKnifeVersion}",
-            "butterknife-compiler"        : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+            "butterknife_compiler"        : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
 
             //facebook
             "stetho"                      : "com.facebook.stetho:stetho:${stethoVersion}",
@@ -75,8 +79,7 @@ project.ext {
             "fastjson"                    : "com.alibaba:fastjson:1.2.31",
             "retrofit2-fastjson-converter": "com.github.BaronZ88:Retrofit2-FastJson-Converter:1.2",
 
-            //test
-            "junit"                       : "junit:junit:4.12",
+
 
             //alibaba ARouter
             "ARouter-api"                 : "com.alibaba:arouter-api:${arouterApiVersion}",

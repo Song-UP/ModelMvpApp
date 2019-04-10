@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_business_dp_1">1px</dimen>
+    <dimen name="common_business_retv_widht">270dp</dimen>
+</resources>

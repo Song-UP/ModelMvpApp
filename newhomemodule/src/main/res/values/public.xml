@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--在这个文件中中配置的资源，外界可以访问-->
+<resources>
+    <public name="new_house_module1_str" type="string"/>
+</resources>
